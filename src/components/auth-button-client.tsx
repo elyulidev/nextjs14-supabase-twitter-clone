@@ -16,7 +16,8 @@ export const AuthButton = ({ user }: { user: User | null }) => {
 		await supabase.auth.signInWithOAuth({
 			provider: "github",
 			options: {
-				redirectTo: "http://localhost:3000/auth/callback",
+				redirectTo:
+					"https://nextjs14-supabase-twitter-clone.vercel.app/auth/callback",
 			},
 		});
 	};
